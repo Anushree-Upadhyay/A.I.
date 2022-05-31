@@ -1,0 +1,36 @@
+body {
+    background: yellow;
+    overflow: scroll;
+}
+
+h1 {
+    background: blue;
+    color: white;
+    padding-left: 120px;
+}
+
+#show_sketch {
+    float: right;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+canvas {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-top: 100px;
+}
+
+@keyframes example {
+    from{box-shadow: 1px 1px 38px teal;}
+    to{box-shadow: 1px 1px 38px rgb(128, 0, 0);}
+}
+
+#label , #confidence {
+    padding-top: 10px;
+    font-size: 25px;
+    color: royalblue;
+}
